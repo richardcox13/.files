@@ -1,0 +1,33 @@
+[user]
+	name = Richard Cox
+	email = richard@rjcox.co.uk
+[alias]
+#	hist = log -10 --pretty='%Cgreen%h%Creset %<(21,trunc)%ci %aN %d %+s' --graph --decorate
+#	histf = log -10 --pretty='%Cgreen%h%Creset %<(21,trunc)%ci %aN %d %+B' --graph --decorate=full
+#	histn = !sh -c 'git log --graph ${1:--5} --pretty=\"%Cgreen%h%Creset %<(21,trunc)%ci %aN %d %+s\" --decorate' -
+#	histnf = !sh -c 'git log --graph ${1:--5} --pretty=\"%Cgreen%h%Creset %<(21,trunc)%ci %aN %d %+B\" --decorate=full' -
+	hist = log -15  --date='format:%Y-%m-%d %H:%M:%S' --pretty='%Cgreen%h%Creset %cd %C(cyan)%aN%Creset %C(magenta)%d%Creset %+s' --graph --decorate
+	h = hist
+	histf = log -10 --date='format:%Y-%m-%d %H:%M:%S' --pretty='%Cgreen%h%Creset %cd %C(cyan)%aN%Creset %C(magenta)%d%Creset %+B' --graph --decorate=full
+	histn = !sh -c 'git log --graph ${1:--5} --date=\"format:%Y-%m-%d %H:%M:%S\" --pretty=\"%Cgreen%h%Creset %C(cyan)%aN%Creset %C(magenta)%d%Creset %+s\" --decorate' -
+	histnf = !sh -c 'git log --graph ${1:--5} --date=\"format:%Y-%m-%d %H:%M:%S\" --pretty=\"%Cgreen%h%Creset %C(cyan)%aN%Creset %C(magenta)%d%Creset %+B\" --decorate=full' -
+	s = status --untracked-files=all --show-stash
+	bb = branch --all --verbose --verbose
+	b = branch --verbose --verbose
+
+	pushu = !git push --set-upstream ${1-origin} ${git branch --show-current}
+[push]
+	default = current
+[core]
+	# Reference copy of command line in case installer messes it up!
+	#editor = 'C:\\Users\\richard\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe' --wait --new-window
+	editor = \"C:\\Users\\richard\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait --new-window
+	commitGraph = true
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[gc]
+	writeCommitGraph = true
+[fetch]
+	writeCommitGraph = true
