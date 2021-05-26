@@ -11,6 +11,7 @@
     "initialPosition": "4120,15", // x,y
     "copyFormatting": false,
     "tabWidthMode": "titleLength",
+
     "keybindings" : 
     [
         {
@@ -41,7 +42,11 @@
             "startingDirectory" : "E:\\",
             //"fontFace" : "Cascadia Code PL",
             "fontFace" : "CaskaydiaCove NF",
-            "colorScheme" : "Campbell"
+            "colorScheme" : "Campbell RJC",
+            "unfocusedAppearance": 
+            {
+                "colorScheme": "Campbell Unfocused"
+            }
         },
         {
             "name": "Windows PowerShell",
@@ -97,6 +102,53 @@
     ],
 
     // Add custom color schemes to this array
-    "schemes": []
+    "schemes": [
+        {
+            "name": "Campbell RJC",
+            "foreground": "#CCCCCC",
+            // covert to true black
+            "background": "#000000",
+            "cursorColor": "#FFFFFF",
+            "black": "#0C0C0C",
+            "red": "#C50F1F",
+            "green": "#13A10E",
+            "yellow": "#C19C00",
+            "blue": "#0037DA",
+            "purple": "#881798",
+            "cyan": "#3A96DD",
+            "white": "#CCCCCC",
+            "brightBlack": "#767676",
+            "brightRed": "#E74856",
+            "brightGreen": "#16C60C",
+            "brightYellow": "#F9F1A5",
+            "brightBlue": "#3B78FF",
+            "brightPurple": "#B4009E",
+            "brightCyan": "#61D6D6",
+            "brightWhite": "#F2F2F2"
+        },
+        {
+            // Colours are darkened by 30%
+            "name": "Campbell Unfocused",
+            "foreground": "#999999",
+            "background": "#000000",
+            "cursorColor": "#FFFFFF",
+            "black": "#000000",
+            "red": "#8a0b16",
+            "green": "#0d710a",
+            "yellow": "#876d00",
+            "blue": "#002699",
+            "purple": "#5f106a",
+            "cyan": "#1d6ba7",
+            "white": "#999999",
+            "brightBlack": "#535353",
+            "brightRed": "#bb1927",
+            "brightGreen": "#0f8b08",
+            "brightYellow": "#f1df31",
+            "brightBlue": "#0044dc",
+            "brightPurple": "#7e006f",
+            "brightCyan": "#2dadad",
+            "brightWhite": "#a9a9a9"
+        }
+    ]
 
 }
