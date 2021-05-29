@@ -46,7 +46,8 @@
             "unfocusedAppearance": 
             {
                 "colorScheme": "Campbell Unfocused"
-            }
+            },
+            "suppressApplicationTitle": true
         },
         {
             "name": "Windows PowerShell",
