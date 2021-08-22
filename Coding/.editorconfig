@@ -12,6 +12,7 @@ indent_style = space
 indent_size = 4
 tab_width = 4
 
+# For VS "Editor Guidelines" extension (https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)
 guidelines_style = 1px dotted 7FA0A0A0
 guidelines = 80, 132
 
