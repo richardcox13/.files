@@ -1,8 +1,16 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 13,
-    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    //"editor.fontFamily": "Cascadia Code",
+    //"editor.fontFamily": "Jetbrains Mono",
+    //"editor.fontSize": 13,
+    // In Fira Code V6
+    // Zero => zero with centre dot
+    // cv31 => parenthese are semi-circles
+    // ss02 => greater/less-than or equal has horizontal line
+    // ss09 => logatures for >>=, <<=, ||=, |=
+    "editor.fontLigatures": "'zero', 'cv31', 'ss02', 'ss09'",
+    //"editor.fontLigatures": true,
     "editor.renderWhitespace": "boundary",
 
     "editor.rulers": [
@@ -97,5 +105,8 @@
     "indentRainbow.ignoreErrorLanguages": [
         "*",
         "markdown"
-    ]
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.editor.splitInGroupLayout": "vertical",
+    "editor.guides.bracketPairs": true
 }
