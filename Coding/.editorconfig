@@ -20,6 +20,9 @@ guidelines = 80, 132
 [*.cs]
 end_of_line = crlf
 
+# Perfer file scoped namespaces
+csharp_style_namespace_declarations = file_scoped
+
 # New line preferences
 
 csharp_new_line_before_catch = false
