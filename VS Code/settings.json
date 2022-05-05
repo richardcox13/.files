@@ -218,5 +218,6 @@
             }
         ]
     },
-    "security.workspace.trust.untrustedFiles": "open"
+    "security.workspace.trust.untrustedFiles": "open",
+    "debug.confirmOnExit": "always"
 }
