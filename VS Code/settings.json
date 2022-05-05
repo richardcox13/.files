@@ -219,5 +219,6 @@
         ]
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "debug.confirmOnExit": "always"
+    "debug.confirmOnExit": "always",
+    "window.confirmBeforeClose": "always"
 }
